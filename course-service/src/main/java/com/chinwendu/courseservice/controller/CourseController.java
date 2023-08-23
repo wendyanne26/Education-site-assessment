@@ -17,7 +17,6 @@ public class CourseController {
     public ResponseEntity<?> addCourse(@RequestBody CourseRequest courseRequest) throws CustomException {
         return new ResponseEntity<>(courseService.addCourse(courseRequest), HttpStatus.CREATED);
     }
-
     @GetMapping("/getCourses")
     public ResponseEntity<?> getCourses() throws CustomException {
         return new ResponseEntity<>(courseService.getCourses(), HttpStatus.OK);
