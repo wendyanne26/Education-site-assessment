@@ -21,10 +21,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
         private final AuthenticationProvider authenticationProvider;
         private final String[] WHITE_LIST = new String[]{
                 "/api/v1/students/register",
-
-//                "/swagger-ui/**",
-//                "/swagger-ui.html",
-               // "/api/v1/students/getListOfCourses"
+                "/swagger-ui/**",
+               "/swagger-ui.html",
+                "/v3/api-docs/**"
         };
 
 
